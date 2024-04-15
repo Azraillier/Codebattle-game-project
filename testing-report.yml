@@ -8,75 +8,75 @@
   status: pass
 
 - summary: |
-    3. Проверка кнопки Submit на странице регистрации
+    3. Проверка валидации полей в форме регистрации
   status: pass
 
 - summary: |
-    4. Проверка валидации полей на странице регистрации
+    4. Успешная регистрация пользователя через Discord
   status: pass
 
 - summary: |
-    5. Успешная регистрация пользователя через Discord
+    5. Успешная регистрация пользователя через GitHub
   status: pass
 
 - summary: |
-    6. Успешная регистрация пользователя через GitHub
+    6. Неудачная валидация поля Nickname
   status: pass
 
 - summary: |
-    7. Неудачная валидация поля Nickname
-  status: pass
-
-- summary: |
-    8. Успешная Валидация поля Nickname 
+    7. Успешная Валидация поля Nickname 
   status: pass
   
 - summary: |
-    9. Неудачная валидация поля Email на странице регистрации
+    8. Неудачная валидация поля Email в форме регистрации
   status: pass
   
 - summary: |
-    10. Успешная Валидация поля Email на странице регистрации
+    9. Успешная Валидация поля Email в форме регистрации
   status: pass
   
 - summary: |
-    11. Успешная Валидация поля Password на странице регистрации
+    10. Успешная Валидация поля Password в форме регистрации
   status: pass
   
 - summary: |
-    12. Неудачная валидация поля Password на странице регистрации
+    11. Неудачная валидация поля Password в форме регистрации
   status: pass
   
 - summary: |
-    13. Успешная Валидация поля Password Confirmation
+    12. Успешная Валидация поля Password Confirmation
   status: pass
   
 - summary: |
-    14. Неудачная валидация поля Password Confirmation
+    13. Неудачная валидация поля Password Confirmation
   status: pass
   
 - summary: |
-    15. Проверка ссылки "Sign in" на странице регистрации
+    14. Проверка ссылки "Sign in" в нижней части макета
   status: pass
   
 - summary: |
-    16. Успешная авторизация через Email
+    15. Успешная авторизация через Email
+  status: pass
+  
+- summary: |
+    16. Проверка нескольких попыток входа с неверными данными
   status: pass
   
 - summary: |
     17. Успешная авторизация через GitHub
   status: pass
-  
+
 - summary: |
     18. Успешная авторизация через Discord
   status: pass
 
 - summary: |
-    19. Неудачная валидация поля Email на странице входа
+    19. Неудачная валидация поля Email в форме авторизации
   status: pass
 
 - summary: |
-    20. Успешная Валидация поля Email на странице входа
+    20. Успешная Валидация поля Email
   status: pass
 
 - summary: |
@@ -90,259 +90,255 @@
 - summary: |
     23. Авторизация по несуществующим данным
   status: pass
-
+  
 - summary: |
     24. Авторизация в чужую учетную запись
   status: pass
   
 - summary: |
-    25. Проверка кнопки Submit на странице входа
+    25. Проверка ссылки "Sign up" под формой авторизации
   status: pass
   
 - summary: |
-    26. Проверка ссылки "Sign up" на странице входа
+    26. Проверка ссылки "Sign up под формой восстановления
   status: pass
   
 - summary: |
-    27. Проверка ссылки "Sign up на странице восстановления аккаунта
+    27. Проверка ссылки "Sign in" под формой восстановления
   status: pass
   
 - summary: |
-    28. Проверка ссылки "Sign in" при восстановлении аккаунта
-  status: pass
-  
-- summary: |
-    29. Успешное восстановление учетной записи
+    28. Успешное восстановление учетной записи
   status: fail
   
 - summary: |
-    30. Проверка кнопки Submit на странице восстановления
+    29. Неудачная валидация поля Email на странице восстановления
   status: pass
   
 - summary: |
-    31. Неудачная валидация поля Email на странице восстановления
+    30. Успешная валидация поля Email на странице восстановления
   status: pass
   
 - summary: |
-    32. Успешная валидация поля Email на странице восстановления
+    31. Проверка кликабельности логотипа Codebattle
   status: pass
 
 - summary: |
-    33. Проверка кликабельности логотипа Codebattle
+    32. Проверка кнопки Sign up в шапке профиля
   status: pass
   
 - summary: |
-    34. Проверка кнопки Sign up
+    33. Проверка кнопки Sign in в шапке профиля
   status: pass
 
 - summary: |
-    35. Проверка кнопки Sign in
+    34. Проверка элементов макета на главной странице
   status: pass
 
 - summary: |
-    36. Проверка элементов макета на главной странице
+    35. Проверка появления модального окна с предложением установить chrome приложение
   status: pass
 
 - summary: |
-    37. Проверка появления модального окна с предложением установить chrome приложение
+    36. Проверка кнопки Create a game
   status: pass
 
 - summary: |
-    38. Проверка кнопки Create a game
+    37. Проверка создания игры в режиме Level 1
   status: pass
 
 - summary: |
-    39. Проверка создания игры в режиме Level 1
-  status: pass
-
-- summary: |
-    40. Проверка создания игры в режиме Level 2
-  status: pass
-  
-- summary: |
-    41. Проверка создания игры в режиме Level 3
-  status: pass
-  
-- summary: |
-    42. Проверка создания игры в режиме Level 4
-  status: pass
-  
-- summary: |
-    43. Проверка общего чата
-  status: pass
-  
-- summary: |
-    44. Проверка кнопки Fight
-  status: pass
-  
-- summary: |
-    45. Проверка работы контекстного меню 
-  status: pass
-  
-- summary: |
-    46. Проверка кнопки Send message
-  status: pass
-  
-- summary: |
-    47. Проверка кнопки send fight invite
-  status: pass
-  
-- summary: |
-    48. Проверка работ ссылка на рейтинг Top list
-  status: pass
-  
-- summary: |
-    49. Открытие характеристики пользователя 
-  status: pass
-  
-- summary: |
-    50. Проверка отображения истории пройденных игр
-  status: pass
-
-- summary: |
-    51. Проверка соответствия показателей онлайна игроков
-  status: pass
-
-- summary: |
-    52. Открытие личного профиля
-  status: pass
-
-- summary: |
-    53. Открытие настроек пользователя
-  status: pass
-
-- summary: |
-    54. Открытие страницы рейтинга пользователей
-  status: pass
-
-- summary: |
-    55. Открытие страницы упражнений 
-  status: pass
-
-- summary: |
-    56. Открытие страницы турниров
-  status: pass
-  
-- summary: |
-    57. Открытие ссылок социальных сетей 
-  status: pass
-  
-- summary: |
-    58. Выход из учетной записи
-  status: pass
-  
-- summary: |
-    59. Переход в игровую комнату 
-  status: pass
-  
-- summary: |
-    60. Пролистывание гайда
-  status: pass
-  
-- summary: |
-    61. Пропуск гайда
-  status: pass
-  
-- summary: |
-    62. Проверка запуска и проверки кода
-  status: pass
-  
-- summary: |
-    63. Проверка работы функции сдаться
-  status: pass
-  
-- summary: |
-    64. Проверка кнопки Reset
-  status: pass
-
-- summary: |
-    65. Проверка включения и выключения редактора Vim 
-  status: pass
-  
-- summary: |
-    66. Проверка кнопки Light/Dark
-  status: pass
-
-- summary: |
-    67. Проверка смены языка
-  status: pass
-
-- summary: |
-    68. Проверка выбора языка программирования
-  status: pass
-
-- summary: |
-    69. Проверка вызова гайда
-  status: pass
-
-- summary: |
-    70. Проверка работы кнопки описания задания
-  status: pass
-
-- summary: |
-    71. Проверка состояния активности вкладки Task
-  status: pass
-
-- summary: |
-    72. Проверка состояния активности вкладки Output
-  status: pass
-  
-- summary: |
-    73. Проверка кнопки возврата на предыдущую страницу
-  status: pass
-  
-- summary: |
-    74. Проверка чата в игровой комнате
-  status: pass
-  
-- summary: |
-    75. Создание индивидуального турнира
-  status: pass
-  
-- summary: |
-    76. Отображение таблицы турниров в лобби
-  status: pass
-  
-- summary: |
-    77. Просмотр пройденного турнира из лобби
-  status: pass
-  
-- summary: |
-    78. Возврат из панели турнира
-  status: pass
-  
-- summary: |
-    79. Проверка отображения характеристики игрока
-  status: pass
-  
-- summary: |
-    80. Проверка отображения рейтинга пользователя
-  status: pass
-  
-- summary: |
-    81. Проверка отображения контента в профиле пользователя
-  status: pass
-  
-- summary: |
-    82. Адаптивная верстка сайта
+    38. Проверка работы бота в игровой комнате 
   status: fail
 
 - summary: |
-    83. Проверка базовой безопасности
+    39. Проверка создания игры в режиме Level 2
+  status: pass
+  
+- summary: |
+    40. Проверка создания игры в режиме Level 3
+  status: pass
+  
+- summary: |
+    41. Проверка создания игры в режиме Level 4
+  status: pass
+  
+- summary: |
+    42. Проверка общего чата
+  status: pass
+  
+- summary: |
+    43. Проверка кнопки Fight
+  status: pass
+  
+- summary: |
+    44. Проверка работы контекстного меню 
+  status: pass
+  
+- summary: |
+    45. Проверка кнопки Send message
+  status: pass
+  
+- summary: |
+    46. Проверка кнопки send fight invite
+  status: pass
+  
+- summary: |
+    47. Проверка работ ссылка на рейтинг Top list
+  status: pass
+  
+- summary: |
+    48. Открытие характеристики пользователя 
+  status: pass
+  
+- summary: |
+    49. Проверка отображения истории пройденных игр
   status: pass
 
 - summary: |
-    84. Проверка работы на разных устройствах
+    50. Проверка соответствия показателей онлайна игроков
   status: pass
 
 - summary: |
-    85. Проверка кроссбраузерности
+    51. Открытие личного профиля
   status: pass
 
 - summary: |
-    86. Проверка работы мобильной версии
-  status: fail
+    52. Открытие настроек пользователя
+  status: pass
 
 - summary: |
-    87. Проверка скорости загрузки сайта
+    53. Открытие страницы рейтинга пользователей
+  status: pass
+
+- summary: |
+    54. Открытие страницы упражнений 
+  status: pass
+
+- summary: |
+    55. Открытие страницы турниров
+  status: pass
+  
+- summary: |
+    56. Открытие ссылок социальных сетей 
+  status: pass
+  
+- summary: |
+    57. Выход из учетной записи
+  status: pass
+  
+- summary: |
+    58. Переход в игровую комнату 
+  status: pass
+  
+- summary: |
+    59. Пролистывание гайда
+  status: pass
+  
+- summary: |
+    60. Пропуск гайда
+  status: pass
+  
+- summary: |
+    61. Проверка запуска и проверки кода
+  status: pass
+  
+- summary: |
+    62. Проверка работы функции сдаться
+  status: pass
+  
+- summary: |
+    63. Проверка кнопки Reset
+  status: pass
+
+- summary: |
+    64. Проверка включения и выключения редактора Vim 
+  status: pass
+  
+- summary: |
+    65. Проверка кнопки Light/Dark
+  status: pass
+
+- summary: |
+    66. Проверка смены языка
+  status: pass
+
+- summary: |
+    67. Проверка выбора языка программирования
+  status: pass
+
+- summary: |
+    68. Проверка вызова гайда
+  status: pass
+
+- summary: |
+    69. Проверка работы кнопки описания задания
+  status: pass
+
+- summary: |
+    70. Проверка состояния активности вкладки Task
+  status: pass
+
+- summary: |
+    71. Проверка состояния активности вкладки Output
+  status: pass
+  
+- summary: |
+    72. Проверка кнопки возврата на главную страницу
+  status: pass
+  
+- summary: |
+    73. Проверка чата в игровой комнате
+  status: pass
+  
+- summary: |
+    74. Создание индивидуального турнира
+  status: pass
+  
+- summary: |
+    75. Отображение таблицы турниров в лобби
+  status: pass
+  
+- summary: |
+    76. Просмотр пройденного турнира из лобби
+  status: pass
+  
+- summary: |
+    77. Возврат из панели турнира
+  status: pass
+  
+- summary: |
+    78. Проверка отображения характеристики игрока
+  status: pass
+  
+- summary: |
+    79. Проверка отображения рейтинга пользователя
+  status: pass
+  
+- summary: |
+    80. Проверка отображения контента в профиле пользователя
+  status: pass
+  
+- summary: |
+    81. Адаптивная верстка сайта
+  status: pass
+
+- summary: |
+    82. Проверка базовой безопасности
+  status: pass
+
+- summary: |
+    83. Проверка работы на разных устройствах
+  status: pass
+
+- summary: |
+    84. Проверка кроссбраузерности
+  status: pass
+
+- summary: |
+    85. Проверка работы мобильной версии
+  status: pass
+
+- summary: |
+    86. Проверка скорости загрузки сайта
   status: pass
