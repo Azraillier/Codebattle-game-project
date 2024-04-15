@@ -539,8 +539,8 @@
     Нажать кнопку Create a game 
   test-data: |
     No data
-  steps: |
-    - Выставить значения - Level 1, Game Type - with a bot, Time control 5, Name - random task, Tags - collections
+  steps: 
+    - Выставить значения  Level 1, Game Type - with a bot, Time control 5, Name - random task, Tags - collections
   expected-result: |
     Открывается игровая комната с заданными параметрами
 
@@ -584,7 +584,7 @@
   test-data: |
     No data
   steps:
-    Выставить значения Level 3, Game Type - with a bot, Time control 30, Name - random task, Tags - null
+    - Выставить значения Level 3, Game Type - with a bot, Time control 30, Name - random task, Tags - null
   expected-result: |
     Открывается игровая комната с заданными параметрами
 
