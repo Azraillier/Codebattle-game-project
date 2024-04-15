@@ -540,7 +540,7 @@
   test-data: |
     No data
   steps: |
-    Выставить значения - Level 1, Game Type - with a bot, Time control 5, Name - random task, Tags - collections
+    - Выставить значения - Level 1, Game Type - with a bot, Time control 5, Name - random task, Tags - collections
   expected-result: |
     Открывается игровая комната с заданными параметрами
 
@@ -569,8 +569,8 @@
   test-data: |
     No data
   steps:
-    1. Создать игру c первой учетной записи
-    2. Выставить значения - Level 2, Game Type - with a friend, Choose opponent - nickname второй учетной записи, Time control 10, Name - random task, Tags - rest, Принять инвайт в игровую комнату со второго аккаунта 
+    - Создать игру c первой учетной записи
+    - Выставить значения - Level 2, Game Type - with a friend, Choose opponent - nickname второй учетной записи, Time control 10, Name - random task, Tags - rest, Принять инвайт в игровую комнату со второго аккаунта 
   expected-result: |
     После приема инвайта со второй учетной записи открывается игровая комната с заданными параметрами у обеих учетных записей
 
@@ -599,8 +599,8 @@
   test-data: |
     No data
   steps:
-    1. Создать игру c первой учетной записи
-    2. Выставить значения - Level 4, Game Type - with other user, Time control 60, Name - passenger and driver, Tags - null
+    - Создать игру c первой учетной записи
+    - Выставить значения - Level 4, Game Type - with other user, Time control 60, Name - passenger and driver, Tags - null
     3. Со второй учетной записи нажать на кнопку Fight во вкладке Lobby напротив ника первого аккаунта
   expected-result: |
     Открывается игровая комната с заданными параметрами у обеих учетных записей
@@ -829,8 +829,8 @@
   test-data: |
     No data
   steps:
-    1. Нажать на область аватара
-    2. Открыть ссылки - GitHub, Hexlet, Join Discord, Telegram    
+    - Нажать на область аватара
+    - Открыть ссылки - GitHub, Hexlet, Join Discord, Telegram    
   expected-result: | 
     Происходит переход на страницы социальных сетей
 
