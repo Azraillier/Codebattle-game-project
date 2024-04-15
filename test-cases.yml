@@ -540,12 +540,7 @@
   test-data: |
     No data
   steps: |
-    Выбрать сценарий 
-    - Level 1
-    - Game Type with a bot 
-    - Time control 5 
-    - Name random task 
-    - Tags collections
+    Выставить значения - Level 1, Game Type - with a bot, Time control 5, Name - random task, Tags - collections
   expected-result: |
     Открывается игровая комната с заданными параметрами
 
@@ -575,14 +570,7 @@
     No data
   steps:
     1. Создать игру c первой учетной записи
-    2. Выбрать сценарий
-    - Level 2
-    - Game Type with a friend 
-    - Choose opponent nickname второй учетной записи
-    - Time control 10 
-    - Name random task 
-    - Tags rest
-    3. Принять инвайт в игровую комнату со второго аккаунта 
+    2. Выставить значения - Level 2, Game Type - with a friend, Choose opponent - nickname второй учетной записи, Time control 10, Name - random task, Tags - rest, Принять инвайт в игровую комнату со второго аккаунта 
   expected-result: |
     После приема инвайта со второй учетной записи открывается игровая комната с заданными параметрами у обеих учетных записей
 
@@ -596,12 +584,7 @@
   test-data: |
     No data
   steps:
-    Выбрать сценарий
-    - Level 3
-    - Game Type with a bot 
-    - Time control 30 
-    - Name random task 
-    - Tags null
+    Выставить значения Level 3, Game Type - with a bot, Time control 30, Name - random task, Tags - null
   expected-result: |
     Открывается игровая комната с заданными параметрами
 
@@ -617,12 +600,7 @@
     No data
   steps:
     1. Создать игру c первой учетной записи
-    2. Выбрать сценарий
-    - Level 4
-    - Game Type with other user 
-    - Time control 60 
-    - Name passenger and driver
-    - Tags null
+    2. Выставить значения - Level 4, Game Type - with other user, Time control 60, Name - passenger and driver, Tags - null
     3. Со второй учетной записи нажать на кнопку Fight во вкладке Lobby напротив ника первого аккаунта
   expected-result: |
     Открывается игровая комната с заданными параметрами у обеих учетных записей
@@ -852,11 +830,7 @@
     No data
   steps:
     1. Нажать на область аватара
-    2. Открыть ссылки
-    - GitHub
-    - Hexlet
-    - Join Discord
-    - Telegram    
+    2. Открыть ссылки - GitHub, Hexlet, Join Discord, Telegram    
   expected-result: | 
     Происходит переход на страницы социальных сетей
 
@@ -885,7 +859,7 @@
   test-data: |
     No data
   steps:
-    Нажать на кнопку Try Simple Battle
+    - Нажать на кнопку Try Simple Battle
   expected-result: |
     Открывается игровая комната
 
@@ -899,8 +873,8 @@
   test-data: |
     No data
   steps:
-    Поочередно нажимать кнопку next до появления кнопки Last в окне Game page
-    Нажать кнопку Last
+    - Поочередно нажимать кнопку next до появления кнопки Last в окне Game page
+    - Нажать на кнопку Last
   expected-result: |
     Происходит пролистывание блоков гайда до их исчезновения
 
@@ -915,7 +889,7 @@
   test-data: |
      No data
   steps:
-    Нажать на кнопку skip guide в окне Game page
+    - Нажать на кнопку skip guide в окне Game page
   expected-result: |
     Окно Game page скрывается
 
@@ -929,7 +903,7 @@
   test-data: |
     No data
   steps:
-    Нажать на кнопку Run
+    - Нажать на кнопку Run
   expected-result: |
     Происходит компиляция и проверка кода   
 
@@ -943,8 +917,8 @@
   test-data: |
     No data
   steps:
-    Нажать на кнопку Give up в виде красного флага
-    В модальном окне нажать Give up
+    - Нажать на кнопку Give up в виде красного флага
+    - В модальном окне нажать Give up
   expected-result: |
     Открывается модальное окно с гифкой, 
     предложением сдаться или отменить
@@ -1049,7 +1023,7 @@
   test-data: |
     No data
   steps:
-    Нажать на кнопку Task Description, расположенную рядом с кнопкой Show guide
+    - Нажать на кнопку Task Description, расположенную рядом с кнопкой Show guide
   expected-result: |
     Появляется окно Task Description с описанием задания
 
@@ -1180,7 +1154,7 @@
   test-data: |
     No data
   steps:
-    Нажать на кнопку tournaments
+    - Нажать на кнопку tournaments
   expected-result: |
     Открывается таблица турниров https://codebattle.hexlet.io/tournaments
     
@@ -1264,7 +1238,7 @@
   requirement: |
     Сайт должен быть доступен на различных устройствах
   prerequisites: |
-    1. Открыть браузер Google Chrome на устройствах с системами Windows, Mac, IOS, Android, Linux 
+    Открыть браузер Google Chrome на устройствах с системами Windows, Mac, IOS, Android, Linux 
   test-data: |
     No data
   steps:
@@ -1282,7 +1256,7 @@
   test-data: |
     No data
   steps:
-    1. Открыть игровую комнату Codebattle без регистрации в браузерах с последними версиями    
+    - Открыть игровую комнату Codebattle без регистрации в браузерах с последними версиями    
     - Google chrome
     - Mozilla Firefox
     - Safari
