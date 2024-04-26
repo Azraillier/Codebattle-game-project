@@ -4,28 +4,30 @@
   requirement: |
     У сайта должен быть механизм регистрации нового пользователя по email адресу и учетным записям Github/Discord
   prerequisites: |
-    Открыть страницу регистрации https://codebattle.hexlet.io/users/new?locale=en&next=%2F
+    Открыть страницу главную страницу Codebattle https://codebattle.hexlet.io/
   test-data: |
     Nickname = example
-    Email = example@example.com
+    Email = Новый Email формата aaa@bbb.ccc
     Password = example
     Password Confirmation = example
   steps:
+    - Нажать на кнопку Sign up
     - Ввести данные в поля
     - Нажать кнопку Submit
   expected-result: |
     Успешное создание учетной записи
     Переход на страницу лобби Codebattle https://codebattle.hexlet.io/#lobby
+    Пользователь видит свой nickname в правом вверхнем углу 
 
 - summary: |
-    2. Проверка повторной регистрации через Email
+    2. Проверка недоступности повторной регистрации через Email
   requirement: |
     У сайта должен быть механизм регистрации нового пользователя по email адресу и учетным записям Github/Discord
   prerequisites: |
     Открыть страницу регистрации https://codebattle.hexlet.io/users/new?locale=en&next=%2F
   test-data: |
     Nickname = example
-    Email = example@example.com
+    Email = Email использованный в регистрации
     Password = example
     Password Confirmation = example
   steps:
@@ -35,28 +37,12 @@
     Валидация полей выдаст ошибки
 
 - summary: |
-    3. Проверка валидации полей в форме регистрации
-  requirement: |
-    Все поля и формы должны проходить валидацию
-  prerequisites: |
-    Открыть страницу регистрации https://codebattle.hexlet.io/users/new?locale=en&next=%2F
-  test-data: |
-    Nickname = gdfg^&#$
-    Email = sdfsd^@%^gmail.com
-    Password = sdfsdlsdfsdlsdfsdlsdfsdl
-    Password Confirmation = lsdfsdl
-  steps:
-    - Ввести данные в поля
-    - Нажать кнопку Submit
-  expected-result: |
-    Валидация полей выдаст ошибки
-
-- summary: |
-    4. Успешная регистрация пользователя через Discord
+    3. Успешная регистрация пользователя через Discord
   requirement: |
     У сайта должен быть механизм регистрации нового пользователя по email адресу и учетным записям Github/Discord
   prerequisites: |
     Открыть страницу регистрации https://codebattle.hexlet.io/users/new?locale=en&next=%2F
+    Использовать заранее Подготовленную учетную запись Discord
   test-data: |
     No data
   steps:
@@ -68,11 +54,12 @@
     Успешная регистрация с учетными данными Discord
 
 - summary: |
-    5. Успешная регистрация пользователя через GitHub
+    4. Успешная регистрация пользователя через GitHub
   requirement: |
     У сайта должен быть механизм регистрации нового пользователя по email адресу и учетным записям Github/Discord
   prerequisites: |
     Открыть страницу регистрации https://codebattle.hexlet.io/users/new?locale=en&next=%2F
+    Использовать заранее Подготовленную учетную запись GitHub
   test-data: |
     No data
   steps:
@@ -84,7 +71,7 @@
     Успешная регистрация с учетными данными GitHub
 
 - summary: |
-    6. Неудачная валидация поля Nickname
+    5. Неудачная валидация поля Nickname
   requirement: |
     Все поля и формы должны проходить валидацию
   prerequisites: |
@@ -98,7 +85,7 @@
     Вывод ошибки "Should contain Latin letters, numbers and underscores. Only begin with latin letter"
     
 - summary: |
-    7. Успешная Валидация поля Nickname
+    6. Успешная Валидация поля Nickname
   requirement: |
     Все поля и формы должны проходить валидацию
   prerequisites: |
@@ -111,7 +98,7 @@
     Валидация поля Nickname прошла успешна
    
 -  summary: |
-    8. Неудачная валидация поля Email в форме регистрации
+    7. Неудачная валидация поля Email в форме регистрации
    requirement: |
     Все поля и формы должны проходить валидацию
    prerequisites: |
@@ -124,7 +111,7 @@
     Валидация поля Email не пройдена
 
 - summary: |
-    9. Успешная Валидация поля Email в форме регистрации
+    8. Успешная Валидация поля Email в форме регистрации
   requirement: |
     Все поля и формы должны проходить валидацию
   prerequisites: |
@@ -137,7 +124,7 @@
     Валидация поля Email прошла успешна
 
 - summary: |
-    10. Успешная Валидация поля Password в форме регистрации
+    9. Успешная Валидация поля Password в форме регистрации
   requirement: |
     Все поля и формы должны проходить валидацию
   prerequisites: |
@@ -150,7 +137,7 @@
     Валидация поля Password прошла успешна
     
 - summary: |
-    11. Неудачная валидация поля Password в форме регистрации
+    10. Неудачная валидация поля Password в форме регистрации
   requirement: |
     Все поля и формы должны проходить валидацию
   prerequisites: |
@@ -165,7 +152,7 @@
     Валидация поля Password не прошла
 
 - summary: |
-    12. Успешная Валидация поля Password Confirmation
+    11. Успешная Валидация поля Password Confirmation
   requirement: |
     Все поля и формы должны проходить валидацию
   prerequisites: |
@@ -179,7 +166,7 @@
     Валидация поля Password Confirmation прошла успешна
 
 - summary: |
-    13. Неудачная валидация поля Password Confirmation
+    12. Неудачная валидация поля Password Confirmation
   requirement: |
     Все поля и формы должны проходить валидацию
   prerequisites: |
@@ -192,6 +179,23 @@
     - Ввести данные в поле
   expected-result: |
     Валидация поля Password Confirmation не прошла 
+    
+- summary: |
+    13. Проверка валидации полей в форме регистрации
+  requirement: |
+    Все поля и формы должны проходить валидацию
+  prerequisites: |
+    Открыть страницу регистрации https://codebattle.hexlet.io/users/new?locale=en&next=%2F
+  test-data: |
+    Nickname = gdfg^&#$
+    Email = sdfsd^@%^gmail.com
+    Password = sdfsdlsdfsdlsdfsdlsdfsdl
+    Password Confirmation = lsdfsdl
+  steps:
+    - Ввести данные в поля
+    - Нажать кнопку Submit
+  expected-result: |
+    Валидация полей выдаст ошибки
 
 - summary: |
     14. Проверка ссылки "Sign in" в нижней части макета
@@ -553,11 +557,16 @@
   test-data: |
     No data
   steps:
-    - Создать игровую комнату с ботом с любым заданием
-    - Написать код
-    - Завершить игру
+    - Нажать на кнопку Create a game
+    - Создать игровую комнату с параметрамина таске rect_area
+    - Выставить значения - Level 1, Game Type - with a bot, Time control 3, Name - rect_area
+    - Запустить игру кнопкой Create battle
+    - Дождаться окончания таймера игры
   expected-result: |
-    Во время решения задания парралельно бот пишет код во втором окне редактора кода
+    В процессе игры бот пишет заскриптованные сообщения в чате
+    В процессе игры бот пишет код во втором окне редактора кода
+    К концу таймера бот заканчивает написание кода
+    
 
 - summary: |
     39. Проверка создания игры в режиме Level 2
@@ -570,7 +579,11 @@
     No data
   steps:
     - Создать игру c первой учетной записи
-    - Выставить значения - Level 2, Game Type - with a friend, Choose opponent - nickname второй учетной записи, Time control 10, Name - random task, Tags - rest, Принять инвайт в игровую комнату со второго аккаунта 
+    - Выставить значения - Level 2, Game Type - with a friend, Choose opponent - nickname второй учетной записи, Time control 10, Name - random task, Tags - rest
+    - Нажать кнопку Create battle
+    - Открыть лобби со второго аккаунта 
+    - В правом вверхнем углу нажать на иконку мечей со второго аккаунта 
+    - Принять инвайт в игровую комнату со второго аккаунта нажав на кнопку Accept 
   expected-result: |
     После приема инвайта со второй учетной записи открывается игровая комната с заданными параметрами у обеих учетных записей
 
@@ -629,6 +642,7 @@
   prerequisites: |
     Авторизоваться в учетную запись
     Открыть лобби https://codebattle.hexlet.io/#lobby
+    В лобби создана активная игра с ботом или игроком
   test-data: |
     No data
   steps:
@@ -850,12 +864,11 @@
     Происходит переход на главную страницу Codebattle
     
 - summary: |
-    58. Переход в игровую комнату 
+    58. Переход в игровую комнату без регистрации
   requirement: |
     Незарегистрированный пользователь должен иметь возможность открывать игровую комнату
   prerequisites: |
     Открыть главную страницу https://codebattle.hexlet.io/
-    Открыть игровую комнату без регистрации
   test-data: |
     No data
   steps:
@@ -894,7 +907,7 @@
     Окно Game page скрывается
 
 - summary: |
-    61. Проверка запуска и проверки кода
+    61. Проверка кнопки Run 
   requirement: |
     Незарегистрированный пользователь должен иметь возможность открывать игровую комнату
   prerequisites: |
@@ -903,9 +916,11 @@
   test-data: |
     No data
   steps:
+    - Окно редактора оставить без изменений
     - Нажать на кнопку Run
   expected-result: |
-    Происходит компиляция и проверка кода   
+    Происходит проверка и компиляция строк редактора кода
+    Появляется ошибка Test failed
 
 - summary: |
     62. Проверка работы функции сдаться
@@ -983,7 +998,7 @@
     - Выбрать русский язык из выпадающего списка
     - Выбрать английский язык из выпадающего списка
   expected-result: |
-    Текст задания переводится на небходимый язык при его смене
+    Текст задания переводится на необходимый язык при его смене
 
 - summary: |
     67. Проверка выбора языка программирования
@@ -1192,6 +1207,7 @@
     Профиль пользователя должен состоять из Аватара, Имени пользователя, Личной статистики, Языка программирования, Наград, Даты регистрации, Завершенных игр
   prerequisites: |
     Авторизоваться в учетную запись
+    У пользователя имеются завершенные игры
     Открыть страницу личного профиля
   test-data: |
     No data
@@ -1296,4 +1312,67 @@
     - Вставить ссылку Codebattle в поле PageSpeed
     - Запустить проверку
   expected-result: |
-    Показатель проверки должны соответствовать результату от 85 до 100 баллов
+    Показатели проверки должны соответствовать результату от 85 до 100 баллов
+    
+- summary: |
+    87. Проверка работы уведомления о регистрации на почту
+  requirement: |
+    Должно быть реализовано оповещение о регистрации на почту
+  prerequisites: |
+    Открыть страницу регистрации https://codebattle.hexlet.io/users/new?locale=en&next=%2F
+  test-data: |
+    Nickname = example
+    Email = Новый Email формата aaa@bbb.ccc
+    Password = example
+    Password Confirmation = example
+  steps:
+    - Ввести данные для регистрации
+    - Нажать кнопку Submit
+    - Авторизоваться в ранее использованный почтовый ящик
+    - Открыть папку входящие
+  expected-result: |
+    В папке входящие находится письмо об успешной регистрации на Codebattle
+    
+- summary: |
+    88. Проверка победы в игре
+  requirement: |
+    Пользователь должен иметь возможность завершить игру победой и проигрышем
+  prerequisites: |
+    Авторизоваться в учетную запись Codebattle  
+  test-data: |
+    Код = 
+    "const _ = require("lodash");
+     const R = require("rambda");
+     const solution = (width, length) => {
+     return width * length; };
+     module.exports = solution;"
+  steps:
+    - В лобби нажать на кнопку Create a battle
+    - Выставить значения  Level 1, Game Type - with a bot, Time control 5, Name - rect_area
+    - Нажать на кнопку create battle
+    - Ввести в окно редактора код
+    - Нажать на кнопку Run  
+  expected-result: |
+    Происходит проверка и компиляция кода
+    Во вкладке Output появляется запись "Yay! All tests passed!!"
+    Появляется модальное окно гифкой и с надписью "Woohoo, you're Champion!!!!!"
+
+- summary: |
+    89. Проверка проигрыша в игре
+  requirement: |
+    Пользователь должен иметь возможность завершить игру победой и проигрышем
+  prerequisites: |
+    Авторизоваться в учетную запись Codebattle
+  test-data: |
+    No data
+  steps:
+    - В лобби нажать на кнопку Create a battle
+    - Выставить значения  Level 1, Game Type - with a bot, Time control 5, Name - rect_area
+    - Нажать на кнопку create battle
+    - Окно редактора кода оставить без изменений
+    - Нажать на кнопку Give up в виде флажка 
+    - В модальном окне нажать на кнопку Give up
+  expected-result: |
+    Происходит проверка и компиляция кода
+    Вкладка таймера заменяется надписью Game over
+    Появляется модальное окно гифкой и с надписью "If you read this you've lost the game"
